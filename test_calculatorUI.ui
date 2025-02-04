@@ -1,0 +1,2211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>911</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="all_frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>911</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#all_frame
+{
+	background:#272727;
+	border-radius:12px;
+}
+
+#top_frame{
+
+border-top-left-radius:12px;
+border-top-right-radius:12px
+}
+
+#stackedWidgetPage_main
+{
+	background:#272727;
+}
+#stackedWidgetPage_tips
+{
+	background:#272727;
+}
+#tips_label
+{
+	color: #F0DFCA;
+
+	font-family:&quot;HanaMinA&quot;;
+	font-size:14px;
+}
+#calculate_button
+{
+	font-family:&quot;HanaMinA&quot;;
+	color:#99795C;
+	background:#B5B3AF;
+	font-size:15px;
+	font-weight:bold;
+	
+}
+
+QLabel
+{
+	color: #99795C;
+	font-weight:bold;
+	font-family:&quot;HanaMinA&quot;;
+	font-size:16px;
+}
+
+QLineEdit
+{	
+	background:#242524;
+	border:1px solid #99795C;
+	border-radius:4px;
+
+	color: #BEBAB8;
+
+	font-size:15px;
+	font-weight:bold;
+	font-family:&quot;HanaMinA&quot;;
+
+}
+
+
+
+QTextEdit
+{	
+	border-radius:7px;
+	border:0px;
+	background:#D5D3CF;
+	font-size:13px;
+	font-weight:bold;
+	font-family:&quot;HanaMinA&quot;;
+	color:#464F47;
+}
+
+QComboBox
+{
+	font-size:14px;
+	font-family:&quot;HanaMinA&quot;;
+	font-weight:bold;
+	color:#BEBAB8;
+	background:#242524;
+	border: 1px solid #99795C; 
+	border-radius:4px;
+}
+
+
+
+QComboBox QAbstractItemView 
+{	
+	font-size:14px;
+	font-family:&quot;HanaMinA&quot;;
+	font-weight:bold;
+	
+	outline: 0px solid gray;  /*取消选中虚线*/
+	border: 1px solid #99795C;
+	border-radius:4px;	
+	
+	color:#BEBAB8;
+	background-color: #242524;   
+	selection-background-color: #BEBAB8;   
+}
+
+QSpinBox
+{
+	font-size:14px;
+	font-family:&quot;HanaMinA&quot;;
+	font-weight:bold;
+	color:#BEBAB8;
+	background:#242524;
+	border: 1px solid #99795C; 
+	border-radius:4px;
+}
+QComboBox::drop-down 
+{
+	border:none;
+}
+
+QTableWidget
+{	
+	border-radius:12px;
+	border:0px;
+	background:#D5D3CF;
+	font-size:13px;
+
+
+	color:#464F47;
+}
+
+QHeaderView::section
+{
+	
+    background-color:rgb(90,90,90);
+    color:rgb(200,200,200);
+
+}
+
+#info_change_button
+{
+	font-family:&quot;HanaMinA&quot;;
+	border-radius:4px;
+	border: 1px solid #99795C; 
+	color:#BEBAB8;
+	background:#242524;
+	font-size:15px;
+	font-weight:bold;
+	
+}
+#enemy_change_button
+{
+	font-family:&quot;HanaMinA&quot;;
+	border-radius:4px;
+	border: 1px solid #99795C; 
+	color:#BEBAB8;
+	background:#242524;
+	font-size:15px;
+	font-weight:bold;
+	
+}
+#border_label,#border_label2,#border_label3,#border_label4,#border_label5,#border_label6
+{
+
+border-style: solid;
+border: 2px solid #99795C;
+border-radius:10px;	
+}
+
+ 
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="top_frame">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>2</horstretch>
+         <verstretch>1</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="button_frame">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>0</y>
+          <width>151</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QPushButton{
+border:none;
+}
+QPushButton:hover{
+padding-botton:5px
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushbutton_tips">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resources/images/tips.png</normaloff>:/resources/images/tips.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushbutton_min">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resources/images/min.png</normaloff>:/resources/images/min.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushbutton_max">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resources/images/max.png</normaloff>:/resources/images/max.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushbutton_close">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="res.qrc">
+             <normaloff>:/resources/images/close.png</normaloff>:/resources/images/close.png</iconset>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QFrame" name="logo_frame">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>151</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="logo_label">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>131</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="res.qrc">:/resources/images/logo_yellow.ico</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QStackedWidget" name="main_stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>80</y>
+          <width>801</width>
+          <height>831</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>2</horstretch>
+          <verstretch>7</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="stackedWidgetPage_main">
+         <widget class="QWidget" name="verticalLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>80</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="character_choice_combobox_Layout">
+           <item>
+            <widget class="QLabel" name="character_choice_label">
+             <property name="text">
+              <string>角色</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="character_choice_combobox"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>140</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="insight_choice_spinbox_Layout">
+           <item>
+            <widget class="QLabel" name="insight_choice_label">
+             <property name="text">
+              <string>洞悉等级</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="insight_spinbox">
+             <property name="maximum">
+              <number>3</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>200</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="level_choice_spinbox_Layout">
+           <item>
+            <widget class="QLabel" name="level_choice_label">
+             <property name="text">
+              <string>角色等级</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="level_spinbox">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>60</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="character_img">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>10</y>
+            <width>111</width>
+            <height>241</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::PreventContextMenu</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QTextEdit" name="info_easy_text">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>490</y>
+            <width>301</width>
+            <height>311</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>20</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="attribute_choice_combobox_Layout">
+           <item>
+            <widget class="QLabel" name="attribute_choice_label">
+             <property name="text">
+              <string>灵感</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="attribute_choice_combobox">
+             <item>
+              <property name="text">
+               <string>请选择</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>370</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="heart_level_choice_spinbox_Layout">
+           <item>
+            <widget class="QLabel" name="heart_level_label">
+             <property name="text">
+              <string>心相等级</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="heart_level_spinbox">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>60</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>310</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="heart_choice_combobox_Layout">
+           <item>
+            <widget class="QLabel" name="heart_choice_label">
+             <property name="text">
+              <string>选择心相</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="heart_choice_combobox">
+             <item>
+              <property name="text">
+               <string>请选择</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="heart_img">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>300</y>
+            <width>181</width>
+            <height>181</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::PreventContextMenu</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="bg_img">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>151</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::PreventContextMenu</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/resources/images/bg.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="rare_img">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>151</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="info_full_table">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>490</y>
+            <width>301</width>
+            <height>311</height>
+           </rect>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="rowCount">
+           <number>9</number>
+          </property>
+          <attribute name="horizontalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderMinimumSectionSize">
+           <number>25</number>
+          </attribute>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>60</number>
+          </attribute>
+          <attribute name="horizontalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>25</number>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="verticalHeaderHighlightSections">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <row>
+           <property name="text">
+            <string/>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>属性</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>角色面板</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>心相加成</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>共鸣加成</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>汇总面板</string>
+           </property>
+          </column>
+          <item row="0" column="0">
+           <property name="text">
+            <string>攻击</string>
+           </property>
+          </item>
+          <item row="1" column="0">
+           <property name="text">
+            <string>生命</string>
+           </property>
+          </item>
+          <item row="2" column="0">
+           <property name="text">
+            <string>现实防御</string>
+           </property>
+          </item>
+          <item row="3" column="0">
+           <property name="text">
+            <string>精神防御</string>
+           </property>
+          </item>
+          <item row="4" column="0">
+           <property name="text">
+            <string>暴击率</string>
+           </property>
+          </item>
+          <item row="5" column="0">
+           <property name="text">
+            <string>暴击创伤</string>
+           </property>
+          </item>
+          <item row="6" column="0">
+           <property name="text">
+            <string>创伤加成</string>
+           </property>
+          </item>
+          <item row="7" column="0">
+           <property name="text">
+            <string>术法威力</string>
+           </property>
+          </item>
+          <item row="8" column="0">
+           <property name="text">
+            <string>仪式威力</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>20</y>
+            <width>71</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="resonate_level_choice_spinbox_Layout">
+           <item>
+            <widget class="QLabel" name="resonate_level_label">
+             <property name="text">
+              <string>共鸣等级</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="resonate_level_spinbox">
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="maximum">
+              <number>60</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="gridLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>70</y>
+            <width>471</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="resonate_gridLayout">
+           <item row="4" column="5">
+            <widget class="QLabel" name="Re_atk_label">
+             <property name="text">
+              <string>增伤单格</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="Re_S_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="Re_L_label">
+             <property name="text">
+              <string>L形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="Re_main_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/大Z形.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="5">
+            <widget class="QLabel" name="Re_atk_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="6">
+            <widget class="QLabel" name="Re_I_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/I形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="Re_J_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/J形.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>false</bool>
+             </property>
+             <property name="openExternalLinks">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6">
+            <widget class="QSpinBox" name="Re_I_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="Re_T_label">
+             <property name="text">
+              <string>T形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QLabel" name="Re_O_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/O形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="Re_Z_label">
+             <property name="text">
+              <string>Z形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QLabel" name="Re_2_label">
+             <property name="text">
+              <string>双格形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLabel" name="Re_T_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/T形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="6">
+            <widget class="QLabel" name="Re_def_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="4">
+            <widget class="QSpinBox" name="Re_2_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="Re_L_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="Re_S_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/S形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QSpinBox" name="Re_L_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="Re_I_label">
+             <property name="text">
+              <string>I形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="5">
+            <widget class="QSpinBox" name="Re_atk_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="Re_O_label">
+             <property name="text">
+              <string>O形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QSpinBox" name="Re_S_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLabel" name="Re_O_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="Re_Z_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="Re_S_label">
+             <property name="text">
+              <string>S形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <widget class="QSpinBox" name="Re_O_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="Re_main_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLabel" name="Re_Z_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/Z形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="6">
+            <widget class="QSpinBox" name="Re_def_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLabel" name="Re_3_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/三格形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="Re_J_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QLabel" name="Re_2_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/双格形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="Re_J_label">
+             <property name="text">
+              <string>J形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QSpinBox" name="Re_T_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="6">
+            <widget class="QLabel" name="Re_def_label">
+             <property name="text">
+              <string>减防单格</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="Re_main_label">
+             <property name="text">
+              <string>大Z形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QLabel" name="Re_I_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="Re_T_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLabel" name="Re_3_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QSpinBox" name="Re_3_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="Re_L_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/L形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLabel" name="Re_3_label">
+             <property name="text">
+              <string>三格形</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="QLabel" name="Re_2_level_label">
+             <property name="text">
+              <string>LV.0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QSpinBox" name="Re_Z_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QSpinBox" name="Re_main_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="5">
+            <widget class="QLabel" name="Re_atk_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/增伤单格形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="6">
+            <widget class="QLabel" name="Re_def_img">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="res.qrc">:/resources/images/减防单格形.png</pixmap>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QSpinBox" name="Re_J_spinbox">
+             <property name="maximum">
+              <number>0</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="heart_bg_img">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>290</y>
+            <width>151</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::PreventContextMenu</enum>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/resources/images/heart_bg.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="calculation_button">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>740</y>
+            <width>161</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="res.qrc">:/resources/images/calculation_button1.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>450</y>
+            <width>301</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="info_change_Layout">
+           <item>
+            <widget class="QLabel" name="info_change_label">
+             <property name="text">
+              <string>简易面板显示</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="info_change_button">
+             <property name="text">
+              <string>切换</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_12">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>460</y>
+            <width>136</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="insight_effect_choice_combobox_Layout">
+           <item>
+            <widget class="QLabel" name="insight_effect_choice_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>洞悉Ⅱ效果</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="insight_effect_choice_combobox">
+             <item>
+              <property name="text">
+               <string>攻击提升5%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>暴击率提升10%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>暴击创伤提升15%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>造成伤害提升8%</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>穿透率提升10%</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>650</y>
+            <width>261</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="enemy_change_Layout">
+           <item>
+            <widget class="QLabel" name="enemy_change_label">
+             <property name="text">
+              <string>敌人选择</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="enemy_change_button">
+             <property name="text">
+              <string>切换</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>690</y>
+            <width>111</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="enemy_tDEF_input_Layout">
+           <item>
+            <widget class="QLabel" name="enemy_tDEF_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>现实防御</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="enemy_tDEF_input"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>690</y>
+            <width>121</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="enemy_mDEF_input_Layout">
+           <item>
+            <widget class="QLabel" name="enemy_mDEF_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>精神防御</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="enemy_mDEF_input"/>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>750</y>
+            <width>111</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="enemy_rDMG_input_Layout">
+           <item>
+            <widget class="QLabel" name="enemy_rDMG_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>受创减免</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="enemy_rDMG_input_Layout_2">
+             <item>
+              <widget class="QLineEdit" name="enemy_rDMG_input"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="sign_2">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_13">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>750</y>
+            <width>121</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="enemy_rCRT_input_Layout">
+           <item>
+            <widget class="QLabel" name="enemy_rCRT_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>暴击防御</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="enemy_rCRT_input_Layout_2">
+             <item>
+              <widget class="QLineEdit" name="enemy_rCRT_input"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="sign_1">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_14">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>460</y>
+            <width>121</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="restraint_choice_combobox_Layout">
+           <item>
+            <widget class="QLabel" name="restraint_choice_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>是否克制</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="restraint_choice_combobox">
+             <item>
+              <property name="text">
+               <string>非克制</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>克制</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_15">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>580</y>
+            <width>111</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="skill1_input_Layout">
+           <item>
+            <widget class="QLabel" name="skill1_choice_input_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>术法卡1倍率</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="skill1_Layout">
+             <item>
+              <widget class="QLineEdit" name="skill1_ratio_input"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="skill1_label">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_16">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>580</y>
+            <width>121</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="skill2_input_Layout">
+           <item>
+            <widget class="QLabel" name="skill2_choice_input_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>术法卡2倍率</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="skill2_Layout">
+             <item>
+              <widget class="QLineEdit" name="skill2_ratio_input"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="skill2_label">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QTextEdit" name="result_info_text">
+          <property name="geometry">
+           <rect>
+            <x>620</x>
+            <y>490</y>
+            <width>159</width>
+            <height>241</height>
+           </rect>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>请在各项属性全部填写完毕后点击下方计算按钮</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_17">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>520</y>
+            <width>121</width>
+            <height>55</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="skill3_input_Layout">
+           <item>
+            <widget class="QLabel" name="skill3_choice_input_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>仪式卡倍率</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="skill3_Layout">
+             <item>
+              <widget class="QLineEdit" name="skill3_ratio_input"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="skill3_label">
+               <property name="text">
+                <string>%</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_18">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>520</y>
+            <width>111</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="damage_choice_combobox_Layout">
+           <item>
+            <widget class="QLabel" name="damage_choice_label">
+             <property name="font">
+              <font>
+               <family>HanaMinA</family>
+               <pointsize>-1</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="text">
+              <string>伤害类型</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="damage_choice_combobox">
+             <item>
+              <property name="text">
+               <string>现实创伤</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>精神创伤</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QLabel" name="border_label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>281</width>
+            <height>271</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="border_label2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>290</y>
+            <width>281</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="border_label3">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>0</y>
+            <width>491</width>
+            <height>441</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="border_label4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>450</y>
+            <width>281</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="border_label5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>650</y>
+            <width>281</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="border_label6">
+          <property name="geometry">
+           <rect>
+            <x>300</x>
+            <y>450</y>
+            <width>491</width>
+            <height>361</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_11">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>690</y>
+            <width>261</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="enemy_choice_combobox_Layout">
+           <item>
+            <widget class="QComboBox" name="enemy_choice_combobox">
+             <item>
+              <property name="text">
+               <string>凶兆·天蛾人</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>厄兆·天蛾人</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>无防御测试怪</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="enemy_info_text">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="placeholderText">
+              <string>请选择敌人</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_19">
+          <property name="geometry">
+           <rect>
+            <x>639</x>
+            <y>20</y>
+            <width>141</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="resonate_ava_Layout">
+           <item>
+            <widget class="QLabel" name="resonate_ava_label_2">
+             <property name="text">
+              <string>共鸣格子可用数量</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="resonate_ava_label">
+             <property name="text">
+              <string>X/X</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <zorder>border_label</zorder>
+         <zorder>border_label2</zorder>
+         <zorder>border_label5</zorder>
+         <zorder>border_label6</zorder>
+         <zorder>border_label3</zorder>
+         <zorder>border_label4</zorder>
+         <zorder>heart_bg_img</zorder>
+         <zorder>bg_img</zorder>
+         <zorder>verticalLayoutWidget</zorder>
+         <zorder>verticalLayoutWidget_2</zorder>
+         <zorder>verticalLayoutWidget_3</zorder>
+         <zorder>character_img</zorder>
+         <zorder>info_easy_text</zorder>
+         <zorder>verticalLayoutWidget_4</zorder>
+         <zorder>verticalLayoutWidget_5</zorder>
+         <zorder>verticalLayoutWidget_6</zorder>
+         <zorder>heart_img</zorder>
+         <zorder>rare_img</zorder>
+         <zorder>info_full_table</zorder>
+         <zorder>verticalLayoutWidget_7</zorder>
+         <zorder>gridLayoutWidget</zorder>
+         <zorder>calculation_button</zorder>
+         <zorder>horizontalLayoutWidget</zorder>
+         <zorder>verticalLayoutWidget_12</zorder>
+         <zorder>horizontalLayoutWidget_2</zorder>
+         <zorder>verticalLayoutWidget_8</zorder>
+         <zorder>verticalLayoutWidget_9</zorder>
+         <zorder>verticalLayoutWidget_10</zorder>
+         <zorder>verticalLayoutWidget_13</zorder>
+         <zorder>verticalLayoutWidget_14</zorder>
+         <zorder>verticalLayoutWidget_15</zorder>
+         <zorder>verticalLayoutWidget_16</zorder>
+         <zorder>result_info_text</zorder>
+         <zorder>verticalLayoutWidget_17</zorder>
+         <zorder>verticalLayoutWidget_18</zorder>
+         <zorder>verticalLayoutWidget_11</zorder>
+         <zorder>verticalLayoutWidget_19</zorder>
+        </widget>
+        <widget class="QWidget" name="stackedWidgetPage_tips">
+         <widget class="QTextEdit" name="tips_text">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>0</y>
+            <width>761</width>
+            <height>621</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'HanaMinA'; font-size:13px; font-weight:600; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>attribute_choice_combobox</tabstop>
+  <tabstop>character_choice_combobox</tabstop>
+  <tabstop>insight_spinbox</tabstop>
+  <tabstop>level_spinbox</tabstop>
+  <tabstop>heart_choice_combobox</tabstop>
+  <tabstop>heart_level_spinbox</tabstop>
+  <tabstop>resonate_level_spinbox</tabstop>
+  <tabstop>Re_main_spinbox</tabstop>
+  <tabstop>Re_L_spinbox</tabstop>
+  <tabstop>Re_J_spinbox</tabstop>
+  <tabstop>Re_T_spinbox</tabstop>
+  <tabstop>Re_O_spinbox</tabstop>
+  <tabstop>Re_I_spinbox</tabstop>
+  <tabstop>Re_S_spinbox</tabstop>
+  <tabstop>Re_Z_spinbox</tabstop>
+  <tabstop>Re_3_spinbox</tabstop>
+  <tabstop>Re_2_spinbox</tabstop>
+  <tabstop>Re_atk_spinbox</tabstop>
+  <tabstop>Re_def_spinbox</tabstop>
+  <tabstop>info_easy_text</tabstop>
+  <tabstop>info_full_table</tabstop>
+  <tabstop>pushbutton_tips</tabstop>
+  <tabstop>pushbutton_min</tabstop>
+  <tabstop>pushbutton_max</tabstop>
+  <tabstop>pushbutton_close</tabstop>
+ </tabstops>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushbutton_close</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>515</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>355</x>
+     <y>6</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushbutton_min</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>434</x>
+     <y>33</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>5</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
