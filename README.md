@@ -1,10 +1,14 @@
 # 重返未来1999 暴雨科算计算器
 
+![](https://img.nga.178.com/attachments/mon_202311/29/axthQkmp-2pf6ZhT3cSrn-go.jpg)
+
 感谢你点击我的开源项目 暴雨科算
 
 这是一款可以计算自选角色、共鸣、心相、敌人的理论伤害、期望伤害、DPM的计算器
 
 ## 使用方法
+
+![](https://img.nga.178.com/attachments/mon_202311/29/axthQ1ag-gek0ZhT3cSm9-pb.jpg)
 
 依次选择角色 共鸣 心相 可以在下方面板显示区显示当前的角色面板，可以点击切换按钮切换为表格型完整面板显示。
 
